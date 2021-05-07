@@ -1,0 +1,1 @@
+; char 	*ft_strcpy(char *restrict dest, const char *src)
