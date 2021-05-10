@@ -1,1 +1,1 @@
-; ssize_t        ft_read(int fd, void *buf, size_t count)
+;size_t        ft_read(int fd, char *buf, size_t count)

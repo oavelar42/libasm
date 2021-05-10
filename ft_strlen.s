@@ -1,4 +1,4 @@
-; int        ft_strlen(const char *str)
+; int        ft_strlen(char *s)
 			section	.text
 			global	ft_strlen
 ft_strlen:										;(char *str) = rdi
