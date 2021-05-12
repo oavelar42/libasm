@@ -5,6 +5,7 @@
 #include <errno.h>
 #include <fcntl.h>
 #include <stdlib.h>
+#include "libasm.h"
 
 int		ft_strlen(char *str);
 char	*ft_strcpy(char *dest, const char *src);
