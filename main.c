@@ -7,13 +7,6 @@
 #include <stdlib.h>
 #include "libasm.h"
 
-int		ft_strlen(char *str);
-char	*ft_strcpy(char *dest, const char *src);
-int		ft_strcmp(char *s1, char *s2);
-int		ft_write(int fd, char *str, int byte);
-int		ft_read(int fd, char *str, int byte);
-char	*ft_strdup(const char *s);
-
 int			main(int argc, char **argv)
 {
 	if (argc != 2)
