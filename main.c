@@ -815,3 +815,7 @@ void	check_strdup(void)
 	printf("	fdup : %s\n", ft_strdup(s5));
 	printf("\n");
 }
+
+/*
+
+-*/
