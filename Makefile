@@ -3,8 +3,14 @@ NAME	=	nasm
 FLAGS	=	-Wall -Wextra -Werror
 NFLAGS	=	-f elf64
 DEBUG	=	-g -F dwarf
-SRCS	=	ft_strlen.s ft_strcpy.s ft_strcmp.s ft_write.s ft_read.s ft_strdub.SRCS
-OBJS	= 	$(SRCS:.s=.o)
+SRCS	=	./ft_strlen.s \
+			./ft_strcpy.s \
+			./ft_strcmp.s \
+			./ft_write.s \
+			./ft_read.s \
+			./ft_strdub.s
+OBJS	= 	
+$(SRCS:.s=.o)
 
 %.o:	%.s
 			$(NA) $(DEBUG) $(NFLAGS) $<
@@ -30,7 +36,7 @@ exe:			$(NAME)
 				@echo "----- all ready! -----"
 
 exedebug:		$(NAME)
-				gcc $(FLAGS) $(DEBUG) -fsanitize=address
+				gcc $(FLAGS) $(DEBUG)
 				main.c $(NAME) -o exe
 				@echo "----- debug exe ready! -----"
 		
