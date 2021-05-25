@@ -16,4 +16,4 @@ Double Word			32 bits
 Quad Word			64 bits
 Double Quad Word		128 bits
 
-Muito obrigado pelas infomaçoes, adeus .. ate ja .... ate amanha _|_
+Muito obrigado pelas infomaçoes, bye .. see you soon .... tomorrow maybe 
