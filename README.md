@@ -13,6 +13,6 @@ The calling convention sets a few rules:
 - rax - used to define the return value of functions
 
 For run with gcc '.c'
-- First step you need to compile your ".s" = nasm -f elf 64 <name.s> -o <name.o>
+- First step you need to compile your ".s" = nasm -f elf64 <name.s> -o <name.o>
 - Next you need to compile your ".c"       = gcc <name.c> <name.o>
 -                                          = ./a.out

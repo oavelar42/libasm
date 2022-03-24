@@ -1,9 +1,9 @@
 section .data
     tit         db 10,'+-------------+',10,'| Calculadora |',10,'+-------------+',0 
     ltit        equ $ - tit
-    obVal1      db 10,'Valor 1: ',0
+    obVal1      db 10,'Valor 1: ',0         ;print
     lobVal1     equ $ - obVal1
-    obVal2      db    'Valor 2: ',0
+    obVal2      db    'Valor 2: ',0         ;print
     lobVal2     equ $ - obVal2
     opc1        db 10,'1. Adicionar',0
     lopc1       equ $ - opc1
@@ -124,3 +124,9 @@ mst_saida:
     mov rbx, 1
     int 80h
     ret
+
+
+
+
+    ; para compilar  nasm -f elf64 name.s  --- gero o arquivo .o 
+    ; e depois       ld name.o -o calc.x --- fera o arquivo executavel
